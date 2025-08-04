@@ -27,12 +27,12 @@ class Asteroid(pygame.sprite.Sprite):
     # ------------------------------------------------------------------
     def _build_asteroid_surface(self) -> pygame.Surface:
         """Draw the red polyline on a transparent surface once."""
-        points = [(0, 200),(50, 100),(100,50),(150,50),(250,25),(450,150),
-                  (400,250),(500,400),(250,500),(50,400),(5,300)]
-        details1 = [(50, 100),(200,150),(250, 200)]
-        details2 = [(500,400),(300,300),(290, 300),(270, 270)]
+        points = [(0 , 200),(50,100),(100,50),(160,50),(250,55),(450,160),
+                  (400,250),(500,400),(250,500),(50,400),(4,300 )]
+        details1 = [(250,55),( 200 ,160),(150, 200 )]
+        details2 = [(500,400),(300,300),(290,200),(150,350)]
         surf   = pygame.Surface((500, 500), pygame.SRCALPHA)
-        #pygame.draw.circle(surf, (0, 255, 100), (50, 50), 50, 3)
+        #pygame.draw.circle(surf, (0, 255, 100), (200, 200), 200, 3)
         pygame.draw.lines(surf, (0, 255, 100), True, points, 5)
         pygame.draw.lines(surf, (0, 255, 100), False, details1, 5)
         pygame.draw.lines(surf, (0, 255, 100), False, details2, 5)

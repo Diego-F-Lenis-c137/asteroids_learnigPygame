@@ -15,6 +15,8 @@ def get_display_size():
 def main():
     pygame.init()
     W, H   = get_display_size()
+    W = W 
+    H = H 
     screen = pygame.display.set_mode((W, H), pygame.FULLSCREEN)
     pygame.display.set_caption("Rocas del espacio - alpha 2.0")
 
