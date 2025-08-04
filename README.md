@@ -9,15 +9,15 @@ Ready:
 - [x] Disparos
 - [x] Fondo aleatorio
 - [x] movimiento horizontal y vertical infinito
+- [x] movimiento de fondo (problema de rendimiento resuelto)
 En Proceso:
-- [ ] movimiento de fondo (esta generando problemas de rendimiento)
+- [ ] Asteroides medianos y pequeños
 - [ ] Colisiones
 Pendientes:
 - [ ] Animaciones
 - [ ] Vidas
 - [ ] Puntaje
 - [ ] Ovnis
-- [ ] Asteroides medianos y pequeños
 - [ ] Niveles
 - [ ] Generacion de distinto numero de asteroides segun nivel
 - [ ] Aceleracion de movimiento con el tiempo
