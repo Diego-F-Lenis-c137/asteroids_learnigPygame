@@ -40,4 +40,3 @@ class Controls():
         
         return None  # Return None when no bullet is created
 
-
