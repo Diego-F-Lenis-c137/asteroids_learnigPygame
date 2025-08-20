@@ -17,6 +17,8 @@ class Ship(pygame.sprite.Sprite):
         self.angle       = 0.0                         # current heading (deg)
         self.angular_vel = angular_vel                 # deg / 
         self.speed = 10
+
+        self. shoots = True
         
         self.orientation = [m.cos(self.angle), m.sin(self.angle)]
         self.right = False
@@ -29,7 +31,7 @@ class Ship(pygame.sprite.Sprite):
         
     def shoot(self):
         # Create a new bullet and return it to be added to the bullet group
-        return s.Shoot(self)
+        return s.Shoot(self) if self.shoots else 0
 
     def getposition(self):
         return self.position
